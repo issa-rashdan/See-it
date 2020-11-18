@@ -1,0 +1,130 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #E0E0E0;
+	font-family: Tahoma, Geneva, sans-serif;
+	overflow-x: hidden;
+}
+
+/*---------------------------part-1------------------------------*/
+.btn {
+	width: 16.2vw;
+	padding: 0.8vw 0;
+	font-size: 1.1vw;
+	background-color: white;
+	border: 1px solid black;
+	cursor: pointer;
+}
+.btn:hover {background-color:whitesmoke;}
+#visible {display:block;}
+#hidden {display:none;}
+
+#part1 {position:relative; top:2.8vw; height:10%;}
+.btn3 { position:relative; width:20%; float:left;}
+#side1 { position:relative; width:10%; float:left;}
+
+
+/*---------------------------part-2------------------------------*/
+#uat {
+	position: relative;
+	top: -20.5vw;
+	height: 27vw;
+	width: 25vw;
+	padding: 1vw 3vw;
+	background-color: white;
+	border: 2px solid black;
+	font-size: 1.3vw;
+	line-height: 1.4;
+	text-align: center;
+}
+#image {height:13vw; width:13vw;}
+#video {	
+	position: relative;
+	top: -20.5vw;
+	right: 60px;
+	width: 94.8%;
+	height: auto;	
+	border: 2px solid black;
+	background-color: white;
+}
+#part2 {width:100%;}
+#left2 { position:relative; width:45%; float:left;}
+#right2 { position:relative; width:55%; float:left;}
+
+
+
+/*---------------------------part-3------------------------------*/
+.box {
+	position: relative;
+	top: -16.5vw;
+	height: 31vw;
+	width: 35vw;
+	padding: 0.4vw 3vw;
+	background-color: white;
+	border: 2px solid black;
+	font-size: 1.2vw;
+	text-align: center;
+	line-height: 1.5;
+	margin-bottom: -16vw;
+}
+.box h2 {margin-bottom:18px;}
+.box a {text-decoration:none; font-style:italic; color:black;}
+.box a:hover {color:blue;}
+
+#part3 {width:100%;}
+#left3 { position:relative; width:53%; float:left; margin-bottom: 50px;}
+#right3 { position:relative; width:20%; float:left; margin-bottom: 50px;}
+
+
+
+/*----------------------------RESPONSIVE DESIGN----------------------------------*/
+@media only screen and (max-width:640px) {
+  /* For mobile phones: */
+	
+	/* part 1 */
+	#part1, .btn3, #side1 {width:100%;}
+	.btn {
+		width: 79vw;
+		margin: 1.2vw;
+		padding: 2.2vw 2vw;
+		font-size: 3.3vw;
+	}
+	#visible {display:none;}
+	#hidden {display:block;}
+
+	/* part 2 */
+	#part2, #left2, #right2 {width:100%;}
+	#uat {
+		top: 10vw;
+		height: 70vw;
+		width: 75vw;
+		padding: 4vw 2vw;
+		font-size: 3.3vw;
+		line-height: 1.5;
+	}
+	#image {height:33vw; width:33vw;}
+	#video {	
+		top: 19vw;
+		right: 0px;
+		width: 82%;
+		height: auto;	
+		border: 2px solid black;
+		background-color: white;
+	}
+	
+	/* part 3 */
+	#part3, #left3, #right3 {width:100%;}
+	#right3 {margin-bottom: 40vw;}
+	.box {
+		top: 27vw;
+		height: 48vw;
+		width: 75vw;
+		padding: 4vw 2vw;
+		font-size: 3.2vw;
+		text-align: center;
+		line-height: 1.5;
+		margin-bottom: -1.5vw;
+	}
+	.box h2 {margin-top:1vw;}
+	#box2 {height: 78vw;}
+}

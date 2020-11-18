@@ -1,0 +1,75 @@
+/*---------------------------------------------------------------------------------------------
+REFERENCES
+CSS Dropdown Button
+https://www.w3schools.com/css/css_dropdowns.asp
+-----------------------------------------------------------------------------------------------*/
+
+.dropbtn { 
+	width: 16.2vw;
+	padding: 0.8vw 0;
+	font-size: 1.1vw;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+} 
+.dropdown { 
+	position: relative; 
+	display: inline-block; 
+	height: 400px;
+	overflow: auto;  
+	overflow-x:hidden; 
+	z-index: 2; 
+} 
+.dropdown-content { 
+	display: none; 
+	position: absolute; 
+	background-color: white; 
+	min-width: 220px; 
+	z-index: 2; 
+} 
+.dropdown-content a { 
+	color: black; 
+	padding: 0.8vw 0.5vw; 
+	text-decoration: none; 
+	font-size: 1.1vw;
+	display: block; 
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.dropdown-content a:hover {background-color: whitesmoke; color:blue;} 
+.dropdown:hover {border-bottom: 1px solid black;}
+.dropdown:hover .dropdown-content {display: block;} 
+
+@media only screen and (max-width:640px) {
+	.dropbtn {
+		width: 46vw;
+		margin: 1.5vw;
+		padding: 1.5vw 0;
+		font-size: 3vw;
+	} 	
+	.dropdown { 
+		position: relative; 
+		display: inline-block; 
+		height: 40vw;
+		overflow: auto;  
+		z-index: 2; 
+	} 
+	.dropdown-content { 
+		display: none; 
+		position: absolute; 
+		background-color: white; 
+		min-width: 22vw; 
+		z-index: 2; 
+	} 
+	.dropdown-content a { 
+		color: black; 
+		padding: 1.8vw 1.5vw; 
+		text-decoration: none; 
+		font-size: 2vw;
+		display: block; 
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+}
